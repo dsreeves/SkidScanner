@@ -1,0 +1,13 @@
+﻿<Window x:Class="SkidScanner.Views.SkidFinished"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SkidScanner"
+        mc:Ignorable="d"
+        Title="SkidFinished" Height="450" Width="800" Background="Yellow">
+    <StackPanel>
+        <TextBlock Width="800" Height="200" TextAlignment="Center" VerticalAlignment="Center" FontSize="90" Margin="0 100 0 0">SKID FINISHED</TextBlock>
+        <Button Width="200" Height="100" Content="OK" FontSize="72" Click="Button_Click" />
+    </StackPanel>
+</Window>

@@ -1,0 +1,36 @@
+﻿<Window x:Class="SkidScanner.Views.ShellView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:cal="http://www.caliburnproject.org"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="800" Width="1200" FontFamily="Times New Roman" FontSize="115" Background="LightGray" Loaded="Window_Loaded" Unloaded="Window_Unloaded"  >
+    <Grid>
+        <StackPanel VerticalAlignment="Center" >
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="180 0 0 10">
+                <Label Width="250" Height="75" FontSize="48"
+                       Content="Skid Count" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" 
+                       />
+                <Label Width="490" Height="75" 
+                       Content="OK Stock Tag #" FontSize="48" Margin="100 0 0 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="200 0 0 20">
+                <Label x:Name="Count" Width="200" Height="150" BorderBrush="Black" BorderThickness="4" Background="Gold"
+                        HorizontalContentAlignment="Center" VerticalContentAlignment="Center" 
+                       />
+                <TextBox x:Name="tb" IsEnabled="{Binding TagEnable}" Text="{Binding Path=Skid, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Background="{Binding SkidColor}" Width="490" Height="150" BorderBrush="Black" BorderThickness="4" Margin="100 0 0 0"/>
+            </StackPanel>
+
+            <Label x:Name="LastScanned" Width="1100" Height="400"
+                   BorderBrush="Black" BorderThickness="4"
+                   Background="{Binding Path=LblColor}" FontWeight="Bold"
+                   HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+                   />
+
+        </StackPanel>
+    </Grid>
+</Window>
