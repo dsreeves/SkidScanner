@@ -7,22 +7,25 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="800" Width="1200" FontFamily="Times New Roman" FontSize="115" Background="LightGray" Loaded="Window_Loaded" Unloaded="Window_Unloaded">
     <Grid>
-        <StackPanel VerticalAlignment="Center" >
-
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="180 0 0 10">
+        <StackPanel Margin="0 50 " >
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 0 0 20">
+                <StackPanel Orientation="Vertical"  >
                 <Label Width="250" Height="75" FontSize="48"
                        Content="Skid Count" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" 
                        />
-                <Label Width="490" Height="75" 
-                       Content="OK Stock Tag #" FontSize="48" Margin="100 0 0 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
-
-            </StackPanel>
-
-            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="200 0 0 20">
                 <Label x:Name="Count" Width="200" Height="150" BorderBrush="Black" BorderThickness="4" Background="Gold"
                         HorizontalContentAlignment="Center" VerticalContentAlignment="Center" 
                        />
-                <TextBox x:Name="tb" IsEnabled="{Binding TagEnable}" Text="{Binding Path=Skid, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Background="{Binding SkidColor}" Width="490" Height="150" BorderBrush="Black" BorderThickness="4" Margin="100 0 0 0"/>
+                
+                </StackPanel>
+                
+                <StackPanel Orientation="Vertical"  >
+
+                <Label Width="490" Height="75" 
+                       Content="OK Stock Tag #" FontSize="48"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="tb" IsEnabled="{Binding TagEnable}" Text="{Binding Path=Skid, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Background="{Binding SkidColor}" Width="490" Height="150" BorderBrush="Black" BorderThickness="4" />
+
+                </StackPanel>
             </StackPanel>
 
             <Label x:Name="LastScanned" Width="1100" Height="400"

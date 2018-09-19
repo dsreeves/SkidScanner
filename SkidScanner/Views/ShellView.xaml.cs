@@ -19,7 +19,7 @@ namespace SkidScanner.Views
 		private void Window_Loaded(object sender, RoutedEventArgs e)
 		{
 			var t = (ShellViewModel)DataContext;
-			t.Main();
+			//t.Main();
 			tb.Focus();
 			
 		}
