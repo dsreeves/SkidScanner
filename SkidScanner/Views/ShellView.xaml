@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:cal="http://www.caliburnproject.org"
         mc:Ignorable="d"
-        Title="MainWindow" Height="800" Width="1200" FontFamily="Times New Roman" FontSize="115" Background="LightGray" Loaded="Window_Loaded" Unloaded="Window_Unloaded"  >
+        Title="MainWindow" Height="800" Width="1200" FontFamily="Times New Roman" FontSize="115" Background="LightGray" Loaded="Window_Loaded" Unloaded="Window_Unloaded">
     <Grid>
         <StackPanel VerticalAlignment="Center" >
 
